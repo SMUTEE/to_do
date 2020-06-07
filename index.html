@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biri's web to-do list</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+		<div class="row">
+			<div class="intro col-12">
+                <h1>Tasks To-Do</h1>
+                <h4>(Created by Biri)</h4>
+				<div>
+					<div class="border1"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="helpText col-12">
+				<p id="first">Type into the input field to add items to your list.</p>
+				<p id="second">Click the item to mark it as complete.</p>
+				<p id="third">Click the "x" to remove the item from your list.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<input id="userInput" type="text" placeholder="New item..." maxlength="30">
+				<button id="enter"><i class="fas fa-pencil-alt">ADD</i></button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="listItems col-12">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
