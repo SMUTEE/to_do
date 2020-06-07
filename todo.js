@@ -1,7 +1,7 @@
-var enterButton = document.getElementById("enter");
-var input = document.getElementById("userInput");
-var ul = document.querySelector("ul");
-var item = document.getElementsByTagName("li");
+let enterButton = document.getElementById("enter");
+let input = document.getElementById("userInput");
+let ul = document.querySelector("ul");
+let item = document.getElementsByTagName("li");
 
 inputLength = () => {
 	return input.value.length;
@@ -12,7 +12,7 @@ listLength = () => {
 }
 
 createListElement = () => {
-	var li = document.createElement("li");
+	let li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
@@ -29,7 +29,7 @@ createListElement = () => {
 
 
 	// START ADD DELETE BUTTON
-	var dBtn = document.createElement("button");
+	let dBtn = document.createElement("button");
 	dBtn.appendChild(document.createTextNode("X"));
 	li.appendChild(dBtn);
 	dBtn.addEventListener("click", deleteListItem);
